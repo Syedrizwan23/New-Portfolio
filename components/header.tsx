@@ -52,7 +52,7 @@ export function Header() {
             >
               Portfolio
             </Link>
-            <Link
+            {/* <Link
               to="testimonials"
               spy={true}
               smooth={true}
@@ -61,7 +61,7 @@ export function Header() {
               className="transition-colors hover:text-foreground/80 cursor-pointer"
             >
               Testimonials
-            </Link>
+            </Link> */}
             <Link
               to="contact"
               spy={true}
