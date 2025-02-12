@@ -43,7 +43,7 @@ const projects = [
     title: "Home Master",
     description:
       "A home cleaning service website designed with Tailwind CSS for a sleek and responsive layout.",
-    image: "/homemaster.png",
+    image: "/Homemaster.png",
     tags: ["HTML", "Tailwind CSS", "JavaScript"],
 
     githubUrl: "https://github.com/Syedrizwan23/Home-Cleaning-Master.git",
