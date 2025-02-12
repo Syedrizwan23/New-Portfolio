@@ -70,7 +70,7 @@ const projects = [
     title: "Sushiman",
     description:
       "A sushi café website featuring multiple pages and sections, built with HTML,CSS and JavaScript.",
-    image: "/sushiman.png",
+    image: "/Sushiman.png",
     tags: ["HTML", "CSS", "JavaScript"],
 
     githubUrl: "https://github.com/Syedrizwan23/ShushiMan.git",
