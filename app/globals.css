@@ -58,3 +58,23 @@
   }
 }
 
+/* Swiper custom styles */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: hsl(var(--primary) / 0.5);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: hsl(var(--primary));
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.swiper {
+  padding-bottom: 40px !important;
+}
