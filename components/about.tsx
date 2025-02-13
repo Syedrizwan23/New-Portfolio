@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { FileText, Briefcase } from "lucide-react"
+import { FileText, Briefcase,GraduationCap } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const experiences = [
@@ -15,6 +15,17 @@ const experiences = [
       "Developed and maintained multiple React-based applications, collaborated with UX teams, and implemented modern frontend practices.",
   },
   
+]
+
+const education = [
+  
+  {
+    degree: "Bachelor of Science in Computer Science",
+    school: "Federal Urdu University of Arts, Science and Technology, Islamabad",
+    period: "2020 - 2024",
+    description: "Core focus on programming fundamentals, data structures, and web development.",
+    
+  },
 ]
 
 export function About() {
@@ -60,6 +71,47 @@ export function About() {
     </Button>
   </div>
 </div>
+
+
+ {/* Education Section */}
+ <div className="w-full space-y-8">
+          <div className="text-center space-y-4">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Education</h2>
+            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
+              My academic background and achievements
+            </p>
+          </div>
+          <div className="grid gap-6 md:gap-8 max-w-[900px] mx-auto">
+            {education.map((edu, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card>
+                  <CardContent className="p-6">
+                    <div className="flex gap-4">
+                      <div className="mt-1">
+                        <GraduationCap className="h-5 w-5 text-primary" />
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="font-semibold text-xl">{edu.degree}</h3>
+                        <div className="text-sm text-muted-foreground space-y-1">
+                          <p className="font-medium text-primary">{edu.school}</p>
+                          <p>{edu.period}</p>
+                        </div>
+                        <p className="text-muted-foreground">{edu.description}</p>
+                       
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
         {/* Experience Section */}
         <div className="w-full space-y-8">
